@@ -2,6 +2,11 @@
 #include <setjmp.h>
 #include <time.h>
 
+// 测试步骤
+// nohup ./a.out &
+// kill -USR1 pid
+// cat nohup.out
+
 static void sig_usr1(int);
 static void sig_alrm(int);
 // 这里变量名换掉了，源码使用的是jmp_buf。已经被定义为一种类型了。
