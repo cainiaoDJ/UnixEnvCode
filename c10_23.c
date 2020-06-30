@@ -1,5 +1,8 @@
 #include "apue.h"
 
+// 运行结果MAC符合预期，CENTOS7不符合
+// MAC下Ctrl+C 不会被退出，CENOTS下两次Ctrl C就会退出
+
 // set nonzero by signal handler
 volatile sig_atomic_t quitflag;
 
